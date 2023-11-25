@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Website Design</title>
+	<link rel="stylesheet" href="styles.css">
+	
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: Times New Roman, serif;
+		}
+		
+		.container {
+			width: cover;
+			height: 100vh;
+			background-image: url("C:/Users/Administrator/Desktop/website asset/background.jpg");
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-color: #333;
+			padding-left: 8%;
+			padding-right: 8%;
+			bos-sizing: border-box;
+		}
+		
+		.navbar {
+			height: 12%;
+			display: flex;
+			align-items: center;
+		}
+		
+		.logo {
+			width: 70px;
+			cursor: pointer;
+			margin-right: 20px;
+		}
+
+		.menu-icon {
+			width: 30px;
+			cursor: pointer;
+			margin-left: 40px;
+		}
+		
+		nav {
+			flex: 1;
+			text-align: right;
+			text-transform: uppercase;
+		}
+		
+		nav ul li {
+			list-style: none;
+			display: inline-block;
+			margin-left: 60px;
+			position: relative;
+		}
+		
+		nav ul li a {
+			text-decoration: none;
+			color: #000000;
+			font-size: 20px;
+		}
+		
+		nav ul li::after {
+			content: '';
+			height: 3px;
+			width: 0;
+			background: #009688;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transition: 0.5s;
+		}
+		
+		nav ul li:hover::after {
+			width: 100%;
+		}
+	
+		.row {
+			display: flex;
+			height: 88%;
+			align-items: center;
+		}
+		
+		.col {
+			flex-basis: 50%;
+		}
+		
+		h1 {
+			color: #000000;
+			font-size: 40px;
+		}
+		
+		h2 {
+			color: #fff;
+			font-size: 100px;
+		}
+		
+		p {
+			color: #fff;
+			font-size: 15px;
+			line-heigt: 15px;
+		}
+		
+		button {
+			width: 180px;
+			color: #000;
+			font-size: 15px;
+			padding: 12px 0;
+			background: #fff;
+			border: 0;
+			border-radius: 20px;
+			outline: none;
+			margin-top: 30px;
+			cursor: pointer;
+		}
+		.card {
+			width: 210px;
+			height: 280px;
+			display: inline-block;
+			border-radius: 10px;
+			padding: 15px 25px;
+			box-sizing: border-box;
+			cursor: pointer;
+			margin: 10px 15px;
+			background-position: center;
+			background-size: cover;
+			transition: transform 0.5s;
+		}
+		
+		.card1 {
+			background-image: url("C:/Users/Administrator/Desktop/website asset/badjao.gif");
+		}
+		.card2 {
+			background-image: url("C:/Users/Administrator/Desktop/website asset/aeta.gif");
+		}
+		.card3 {
+			background-image: url("C:/Users/Administrator/Desktop/website asset/bagobo.gif");
+		}
+		
+		.card:hover {
+			transform: translateY(-10px);
+		}
+		
+		h5 {
+			color: #000000;
+			font-size: 25px;
+			text-shadow: 0 0 5px #999;
+			margin-top: 15px;
+			text-align: center;
+		}
+		
+		
+	
+	
+	</style>
+	</head>
+
+	<body>	
+		<div class="container">
+			<div class="navbar">
+				<img src="C:/Users/Administrator/Desktop/website asset/logo.png" class="logo"> 
+				<h1>The Philippine Tribal Simulation</h1>
+
+				<nav>
+					<ul>
+						<b>
+						<li><a href="">Home</a></li>
+						<li><a href="">Vision</a></li>
+						<li><a href="">Mission</a></li>
+						</b>
+					</ul>
+				</nav>
+				<img src="C:/Users/Administrator/Desktop/website asset/menu.png" class="menu-icon">
+			</div>
+			
+			<div class="row">
+				<div class="col">
+					<h2>TPTS</h2>
+					<p>A Real-Time Strategy (RTS) game that based on Philippines tribe.</p>
+					<button onclick="location.href='https://www.mediafire.com/file/rvk3jsf85vu86v9/TPTS_rts.apk/file';">Download</button>
+				</div>
+				
+				<div class="col">
+					<div class="card card1">
+						<h5>BADJAO</h5>
+						
+					</div>
+					<div class="card card2">
+						<h5>AETA</h5>
+						
+					</div>
+					<div class="card card3">
+						<h5>BAGOBO</h5>
+						
+					</div>
+				</div>
+			</div>
+	
+	
+	
+	</body>
+	</html>
